@@ -5,7 +5,11 @@ html, body {
   font-family: 'helvetica', 'arial', 'sans';
 }
 
-h1,h2,h3,h4 {
+h1 {
+  color: #5597AB;
+
+}
+h2,h3,h4 {
   font-family: 'helvetica', 'arial', 'sans';
   }
 
@@ -16,7 +20,7 @@ a {
 
 .header {
   background: #fff;
-  color: #5597AB;
+  color: #000;
   height: 500px;
   padding: 30px 30px 30px;
 }
@@ -74,10 +78,6 @@ a {
   width: 50%;
 }
 
-
-img {
-    width: 10%;
-}
 
 
 .container {
