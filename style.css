@@ -1,38 +1,39 @@
 .css-selector {
-  font-family: 'Quicksand', serif;
+    font-family: 'Quicksand', serif;
 }
 
-html, body {
+html,
+body {
 
-  font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
-h1 {
-  color: #000;
 
+h1, h2, h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: #F08080;
+    text-align: center;
 }
-h2,h3,h4 {
-  font-family: 'Quicksand', sans-serif;
-  }
+
 
 a {
-  color: #000;
+    color: #000;
 }
 
 .header {
-  background: #fff;
-  color: #5597AB;
-  padding: 30px 30px 30px;
+    background: #fff;
+    color: #000;
+    padding: 30px 30px 30px;
     height: 450px;
 }
 
 .assignment {
-  font-size: 15px;
-  line-height: 24px;
-  padding: 20px 20px 20px 30px;
-  width: 250px;
-  height: 350px;
-  float: left;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 20px 20px 20px 30px;
+    width: 250px;
+    height: 350px;
+    float: left;
 }
 
 .assignment a {
@@ -41,9 +42,9 @@ a {
 }
 
 .assignment a:hover {
-  background: #F06;
-  color: #5597AB;
-  text-decoration: none;
+    background: #F06;
+    color: #F08080;
+    text-decoration: none;
 }
 
 
@@ -58,31 +59,22 @@ a {
     padding: 0px 30px 30px 30px;
 }
 
-.widebody a {
-}
+.widebody a {}
 
 .widebody a:hover {
-  background: #F06;
-  color: #FFF;
-  text-decoration: none;
+    background: #F06;
+    color: #FFF;
+    text-decoration: none;
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .container {
     margin: 100px;
 }
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 
