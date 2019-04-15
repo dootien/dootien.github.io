@@ -10,7 +10,6 @@ body {
 
 
 h1, h2, h3 {
-    font-family: 'Quicksand', sans-serif;
     color: #F08080;
     text-align: center;
 }
@@ -80,4 +79,14 @@ a {
 
 img {
     height: 50%;
+}
+
+input[type=button] {
+    background-color: #F08080;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
 }
