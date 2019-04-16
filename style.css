@@ -55,12 +55,14 @@ a {
     text-decoration: none;
 }
 
-/*
-
-.header {
-    height: 700px;
+div a img {
+    width: 250px;
 }
-*/
+
+div a p {
+    text-align: center;
+}
+
 
 footer {
     height: 100px;
@@ -90,7 +92,7 @@ footer {
 
 img {
     padding: 0px 20px;
-    width: 500px;
+    width: 400px;
 }
 
 
