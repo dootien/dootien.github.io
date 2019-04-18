@@ -40,7 +40,7 @@ a {
     font-size: 15px;
     line-height: 24px;
     text-align: center;
-    width: 33.33%;
+/*    width: 33.33%;*/
     float: left;
 }
 
@@ -56,12 +56,13 @@ a {
 }
 
 div a img {
-    width: 250px;
+    width: 220px;
 }
 
 div a p {
     text-align: center;
 }
+
 
 
 footer {
@@ -91,7 +92,7 @@ footer {
 }
 
 img {
-    padding: 0px 20px;
+    padding: 0px 5px;
     width: 400px;
 }
 
