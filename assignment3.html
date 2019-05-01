@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>2. CAD Model</title>
+
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+</head>
+
+<body>
+    <div class="center">
+        <h1>Assignment 3: 3D Print + Laser Cut Lamp! </h1>
+        <img src="hw2parts.png" style="width: 600px">
+
+        <p style="text-align: center">Tools: Rhino/Grasshopper, Illustrator, paper, cardboard, stock paper, mat board</p>
+        <hr>
+        <h2>Process</h2>
+        <img src="hw3/hw3sketch.png">
+        <img src="hw3/basicbase.png">
+        <p>I started this project with sort of exploring Rhino and making a basic base and lamp shape. This first step is really to learn how to use Rhino properly and explore making other shapes. One of the problems that I encountered at this first stage is keeping track of all the pieces and remembering units for each dimensions to replicate later. I ended up doing sketches as I was going because it helped track the different changes that I was making and recorded dimensions that I wanted to keep.</p>
+
+        <p>Sketching also really helped with ideating and having a visual presentation of my thoughts on paper helps me see problem areas such as how the lamp shape would potentially fit into the base or how big the lamp would become and whether that was feasible for printing.</p>
+
+        <h3> The Base</h3>
+        <img src="hw3/loft.png">
+        <img src="hw3/lampshade.png">
+        <p>After playing around with lofting and accidentally discovered that lofting could make really cool shapes, I started ideating on having a vase-like structure for the base of the lamp. I tried a lot of lofting with different shapes, such as circles and hexagons, in different sizes and distances apart. I tried different ways to stack the surfaces to get a shape that I thought was good enough for the base. I was looking for a sturdy but slim shape so that it won't take too long to print but also looks nice! </p>
+
+        <img src="hw3/bulb size.png">
+        <p>The next part of the process was figuring out the piece to fit the bulb. I used my caliper to measure the bulb I had at home and used those measurements to create a holder for the bulb. Later down the process, I figured that there are different sizes of bulbs that I could design for because I wanted to save printing time and also figured that my model would be too small to fit a normal size light bulb. I ended up using the smallest bulb measurement which was E12 bulbs. </p>
+
+        <img src="hw3/dremmel1.png">
+        <p>At this point, I was curious about how the support would work so I imported my first iteration of the model into Dremel just to see how it would potentially look like printed. My first issue when importing was that the model was super small. </p>
+
+        <img src="hw3/settings.png">
+
+        <p>I figured it was probably a problem with the exporting settings so I just started changing the settings almost randomly to see if it makes a difference in dimensions. Turns out: it did! So then I just did some extra research online about what the different options meant in the settings (source: <a href="https://wiki.mcneel.com/rhino/meshfaqdetails"> Link to site</a>) and tried a bunch of different combinations to finally for to my screenshot above.</p>
+
+        <img src="hw3/dremmel.png">
+        <p>After figuring out how to transfer the exact dimensions, it turned out that my model was actually way too big! I did try to do the resizing in Dremel but I also wanted to make sure that the bulb holder was exact size so just to ensure it was, I just went back to Rhino and redid the model to fit the size of the printing box in mm.</p>
+
+        <p>Figuring out the logistics of importing and exporting the file made me felt at ease that at least I know how big the model should be to not have to run into that problem after everything is done. </p>
+
+
+        <img src="hw3/base1.png">
+        <p>One of the biggest obstacle that I encountered was actually figuring out how to fit the lamp shape into the model. I started thinking of doing some sort of piece that would slide into the lamp with anchors to lay the lamp shape into. While I started designing the piece, I realized that it would not be stable because it would slide up and down. So I thought that I would just build in the anchors into the base so that it wouldn't move since it is 3D printed together. </p>
+
+
+        <img src="hw3/bulbsize.png">
+        <p>I started with having two anchors because I thought that it would be enough but I realized that the bars I am printing out is a little thin so since I haven't tried putting the cardboard pieces into the base, I wasn't sure that it would hold the weight with just two anchors so I added two more anchors with a total of four. I realized doing this also helped with assembling the lamp shape a little bit better because each anchor would support one pane of lamp.</p>
+
+        <p>Putting all the pieces together in Rhino wasn't very difficult. I just made basic shapes and unioned them together. The biggest challenge was making sure everything was aligned but the different views in Rhino was very helpful to get a overall view of the model.</p>
+
+
+        <h3>The Horror of Printing</h3>
+        <img src="hw3/print.png">
+        <p>This is the final model used for printing.</p>
+        <p>Printing took the most time throughout this whole process. My first print trial was around 6 hours so I left it to print overnight. I also took advice from our Slack channel to use Simplify3D to print and I actually find it for intuitive and informative than Dremel was. I liked how you could see a preview of how it was going to be printed to identify potential mishaps. It was important for me to get my base printed before I could actually start cutting my lamp shape because I needed to check for snugness of the press cut.</p>
+
+
+        <img src="hw3/print1.png">
+        <img src="hw3/print12.png">
+        <p>My first print ended up a fail because the bars used as anchors didn't actually print...which I have no idea why but due to that, all the pieces that connected above the bar didn't stay on and fell apart when I chiseled the model from the base. I suspect that it might be because the bars weren't closed and was a bit too hollow on the inside so I went back to Rhino and capped it.</p>
+
+        <img src="hw3/print2.png">
+
+        <iframe src="https://giphy.com/embed/ftevkmwhL6KVeUJKwV" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+        <p>My second print was even more of a failure because it didn't even finish printing properly. I asked the staff why the print turned out that way and they told me that it was probably a printer error and nothing to do with my file. I suspect that it could be due to the fact that I decreased infill to 0% because I was trying to achieve a hollow bulb case. One of the troubles I had with printing is that the bulb case is meant to be hollow on top but the Simplify3D keeps showing that there is a cap printed over it. After many trials and all errors, I was not able to figure out why (Thanks to Joshua for helping!) so my solution was to print it and chisel out the top because the piece itself is hollow on the inside. Looking at the videos of the first stage of printing between Print 2 and Print 3, I think I could have guessed that Try 2 was going to be a mess because it didn't look as clean as Print 3.</p>
+
+        <iframe src="https://giphy.com/embed/37Ra4ud7USkEb6OSJG" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <img src="hw3/print3.png">
+        <p>For my third print, I prayed to the Makerspace God and FINALLLY, the print came out nice and correct. I did run into trouble with trying to carefully chisel out the support because my anchor bars were quite small and delicate but using some tools from the Mill, I just carefully cut around the model.</p>
+
+
+
+        <h3> The Lamp Shape</h3>
+        <p>With the base finally completed, I started working on the lamp shape. Since I spent so much time working on the base, I didn't go very fancy or creative with the lamp shape. I wanted something stable to stand on the anchor bars but also had to figure out how to connect the lamp walls so that it wouldn't become flimsy if the only thing supporting it is the anchor bar. I thought of using circle cut outs to use as connectors. I had to do several cut tests for the right fit between the connector and the lamp shape pieces. </p>
+
+        <img src="hw3/cut.png">
+        <p>My first test cut showed that when the lamp shape pieces and the connector comes together, the lamp shape piece was sliding in too far and having two pieces connected would not work because there wouldn't be enough space. </p>
+
+        <img src="hw3/cut2.png">
+
+        <p>There wasn't an exact science to this but I just make the press cut a little further apart and shorter so that when the pieces connect, it wouldn't hit each other and leave enough room for light to come through.</p>
+
+        <img src="hw3/cut3.png">
+        <p>I also had to do a press cut on the bottom of the lamp shape piece so that it would fit snugly into the anchor bar. At first, I cut it using the dimension from Rhino which was 5mm but it wasn't snug enough and so I made it 4.9mm and the fit was much more stable.</p>
+        <img src="hw3/cut4.png">
+        <p>One of my worries was that the cardboard was too heavy for the bars. I think I was lucky that I was using cardboard from USPS boxes and it was very thin (0.8mm) but stable. I think that if I used any thicker cardboard then the bars would not have been able to support the weight.</p>
+
+        <h2>Kit Design</h2>
+        <img src="hw3/pieces.JPG">
+        <img src="hw3/piec.png">
+
+        <p>Overall, the model consists of 4 lamp shape pieces, 4 connectors and a base. The connectors connect the lamp pieces on the side into a square shape and using the bottom press cut, the whole lamp shape can be fitted into the anchor bars (slight shifting to align the shape to the base). </p>
+        <h2>Source Files</h2>
+
+        <h3><a href="https://drive.google.com/drive/folders/1bBpB0npuNmHD4I3YIznZaJddKTWVNB4J?usp=sharing"> Link to source files!</a></h3>
+        <h3> Print Settings</h3>
+
+        <img src="hw3/cardboard.png">
+        <p>I used the same print settings as before to cut cardboard.</p>
+
+        <h2>Peer Attributions: Leo!</h2>
+
+        <form>
+            <input type="button" value="Home" onclick="history.back()">
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
