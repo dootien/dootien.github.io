@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>5. Milling Thing</title>
+
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+</head>
+
+<body>
+    <div class="center">
+        <h1>Assignment 5</h1>
+        <p style="text-align: center">Milling Box!</p>
+        <iframe src="https://giphy.com/embed/1iOY6bhFcJ6Erd2s3S" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <p style="text-align: center">Tools: Onshape, caliper</p>
+        <hr>
+        <h2>Process</h2>
+        <p>To begin this assignment, I started looking at the different milling joints from lecture and online. The FR1 is much thinner than the examples I see so I thought that I'll start with a basic square joints.</p>
+
+        <img src="hw5/sketch1.png">
+
+        <p>I started sketching it out in Onshape. I started with making rectangles that are within the dimensions of my FR1. Using the caliper, I measured the thickness of the FR1 that I used to make the joints and also used for extruding so I can model the fit of the different sides together. </p>
+
+        <img src="hw5/bottom.png">
+
+        <p>The first side that I worked on was the bottom. At this point, I wasn't too sure how the pieces would look like but I started with the bottom and built more on that. I knew that I wanted to use square cuts and I want it to e big enough in thickness that the mill would be able to cut it. It was confusing thinking about the shapes of each side and how they fit together at once so I figured I would just start with one first and slow try the fit of each side. </p>
+
+        <p>I had a lot of trouble in the beginning making the cuts even on all sides. I used transform at first but then it was hard to align them when the sides are not equal so I ended up using transform one side to make sure the cuts are equally spread out and drew the lines manually on the other sides. </p>
+
+        <img src="hw5/Assembly.png">
+
+        <p>After finishing the bottom piece, I started with one of the side pieces. I used the bottom piece as the guide for the side pieces because I know what to cut to make it fit in the joint. After I complete one of the sides, I put the pieces in assembly to test for fit using Fasten. I am still learning how to use Fasten correctly so at times I just had to move the pieces manually to see if the fit is right. This really helped me see parts where it was cut at the wrong length. Something weird about onshape is that sometimes when I changed the dimenions of one thing, it affects another thing that is subtle that I don't see until I try to assemble it at the end. The nice thing about building a box is that you just need to design 3 different sides since they are parallel. </p>
+
+        <img src="hw5/corners.png">
+        <img src="hw5/sketch.png">
+
+        <p>So after I finished with one side piece, I worked on the other one. I think that this piece was the hardest to figure out because I had to account for the thickness of the other pieces. I had to subtract pieces that would already have been connected. Assembly really helped with this because I used it to see how much I should subtract since I could see where the overlap was. </p>
+
+        <img src="hw5/dogbone.png">
+        <p> While I was working on the side piece, I suddenly remembered about the shortcomings of milling and that it can't make sharp edges and my design is full of them. Obviously, the joints won't fit if the edge is not being cut so I did some research on dogbones and how to do them. The one way I thought was the easiest to do and applied to my many edges was just to have half a radius of the mill end extend out. I figured that I would use the 1/32" end so I made my dogbone with 1/32" diameter. </p>
+
+        <img src="hw5/box.png">
+        <p> The fit is good! Time to go milling! </p>
+
+        <h3>~Milling~</h3>
+        <img src="hw5/kicad.png">
+        <p>I exported the different surfaces in DXF and imported it into KiCAD. I just followed the instructions provided for settings and position. I plotted and imported the file into Bantam. </p>
+        
+        <img src="hw5/bantam.png">
+        <p>Inside of the Bantam, I had these red corners which were my dogbones. I asked the staff and they said it should be ok but just in case, i redid the file to make my dogbones bigger. Even so, I still had the red errors. I proceeded to mill anyway because the dogbone would just be smaller than what I wanted but the edge would still fit.</p>
+        
+        <iframe src="https://giphy.com/embed/2WGRSdoXxolAjTaLeu" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        
+        <p>When I started milling, I had a lot of problems with the material sliding. First it was sliding on the platform and then it was sliding between its sandwich formation. So I used A LOT of double sided tape and say a silent prayer every time I send it to the Othermill.</p>
+        
+        <img src="hw5/cut.png">
+        <p>The first cut was not that great because there was a lot of debrief on the edges. Tyson told me that's because I forgot to set the Z to be the thickness of the FR1 so it was cutting through to the second board. It sounds like I got two for one cut but the edges didn't fit because the second board's cut was smaller.</p>
+        
+     
+        <h2>Source Files</h2>
+        
+      
+        <h3><a href="https://cad.onshape.com/documents/6516f83554824cb2368ca9d1/w/ee6d93c006c4bddcb36d2248/e/efd7e614ae28c8daa6c7fd6e"> 60x60 side</a></h3>
+        <h3><a href="https://cad.onshape.com/documents/4e9d1f8b71f7f8995a2ef376/w/d4f7865b457d32830a498f18/e/c2aa25602d881d97d96e93f5"> 80x60 side</a></h3>
+
+        
+        <h3>Print Settings</h3>
+      
+
+
+        
+        <form>
+            <input type="button" value="Back" onclick="history.back()">
+        </form>
+
+    </div>
+</body>
+
+</html>
