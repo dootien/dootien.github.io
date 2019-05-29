@@ -106,7 +106,9 @@ input[type=button] {
     text-decoration: none;
     cursor: pointer;
 }
-
+ol, ul{
+    text-align: left;
+}
 hr {
     margin: 50px;
     /*
